@@ -624,6 +624,7 @@ select {
 
 .map-pane {
   display: grid;
+  align-content: start;
   gap: 14px;
 }
 
@@ -631,7 +632,8 @@ select {
   position: sticky;
   top: 24px;
   overflow: hidden;
-  min-height: 520px;
+  height: clamp(340px, 50vh, 460px);
+  min-height: 0;
   border: 1px solid #cad6c8;
   border-radius: 8px;
   background:
@@ -854,7 +856,7 @@ select {
   }
 
   .mock-map {
-    min-height: 390px;
+    height: clamp(300px, 46vh, 390px);
   }
 
   .map-label.center,
